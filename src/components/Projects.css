@@ -170,6 +170,13 @@
     transform: translateY(-5px);
   }
   
+  @media (max-width: 992px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+  
   @media (max-width: 768px) {
     .projects-grid {
       grid-template-columns: 1fr;
@@ -179,5 +186,31 @@
     .project-tech,
     .project-links {
       display: block;
+    }
+    
+    .project-title {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .project-card {
+      min-height: 220px;
+    }
+    
+    .project-content {
+      padding: 1.5rem;
+    }
+    
+    .project-title {
+      font-size: 1.2rem;
+    }
+    
+    .project-description li {
+      margin-bottom: 0.6rem;
+    }
+    
+    .tech-tags {
+      gap: 0.4rem;
     }
   }
